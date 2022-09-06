@@ -1,10 +1,10 @@
 plugins {
-	id 'fabric-loom' version '0.9-SNAPSHOT'
+	id 'fabric-loom' version '1.0-SNAPSHOT'
 	id 'maven-publish'
 }
 
-sourceCompatibility = JavaVersion.VERSION_1_8
-targetCompatibility = JavaVersion.VERSION_1_8
+sourceCompatibility = JavaVersion.VERSION_17
+targetCompatibility = JavaVersion.VERSION_17
 
 archivesBaseName = project.archives_base_name
 version = "${project.mod_version}+mc${project.minecraft_version}"
@@ -29,9 +29,7 @@ dependencies {
 	// Depend on sodium for compatibility mixins
 	//TODO sodium isn't published to any maven repo yet https://jitpack.io/#jellysquid3/sodium-fabric/
 //	modCompileOnly "com.github.jellysquid3:sodium-fabric:${project.sodium_version}"
-//	modRuntime "com.github.jellysquid3:sodium-fabric:${project.sodium_version}"
-	modCompileOnly(files("libs/sodium-fabric-mc1.17.1-0.3.0+build.5.jar"))
-	modRuntime(files("libs/sodium-fabric-mc1.17.1-0.3.0+build.5.jar"))
+	modCompileOnly(files("libs/sodium-fabric-mc1.19.2-0.4.4+build.18.jar"))
 
 	// PSA: Some older mods, compiled on Loom 0.2.1, might have outdated Maven POMs.
 	// You may need to force-disable transitiveness on them.
