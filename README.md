@@ -15,7 +15,7 @@ directory.
 
 To invoke SignSearcher, use the following (client-side) commands:
 
-- `/signsearch search <query>` - You can add new words to the search. and highlights all matching signs.
+- `/signsearch search <query>` - You can add new words to the search, and highlights all matching signs.
 
 - `/signsearch desearch` - Clears the current query, removing the
 highlight effect from all signs.
