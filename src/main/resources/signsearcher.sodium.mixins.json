@@ -1,0 +1,14 @@
+{
+  "required": false,
+  "minVersion": "0.8",
+  "package": "com.dan.signsearcher.mixin.sodium",
+  "compatibilityLevel": "JAVA_17",
+  "mixins": [],
+  "client": [
+    "SodiumWorldRendererMixin"
+  ],
+  "server": [],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

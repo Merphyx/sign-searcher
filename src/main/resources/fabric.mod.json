@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "sign-searcher",
+  "version": "${version}",
+
+  "name": "Sign Searcher",
+  "description": "Search the text on nearby signs",
+  "authors": [
+    "Dan",
+    "tokumei64"
+  ],
+
+  "license": "MIT",
+  "icon": "assets/signsearcher/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [],
+    "client": [
+      "com.dan.signsearcher.SignSearcher"
+    ],
+    "server": [],
+    "cotton-client-commands": [
+      "com.dan.signsearcher.SignSearcher"
+    ]
+  },
+  "mixins": [
+    "signsearcher.minecraft.mixins.json",
+    "signsearcher.sodium.mixins.json"
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.14.9",
+    "fabric-api": "*",
+    "minecraft": "~1.19",
+    "java": ">=17"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
