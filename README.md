@@ -15,11 +15,13 @@ directory.
 
 To invoke SignSearcher, use the following (client-side) commands:
 
-- `/signsearch <query>` - Starts a new query with the given text (may contain
-spaces, does not need to be quoted), and highlights all matching signs.
+- `/signsearch search <query>` - You can add new words to the search. and highlights all matching signs.
 
-- `/signsearch` (with no arguments) - Clears the current query, removing the
+- `/signsearch desearch` - Clears the current query, removing the
 highlight effect from all signs.
+
+- `/signsearch desearch <Text>` - Clears individual searched words.
+
 
 ## Compatibility
 
@@ -27,7 +29,7 @@ Because of the changes that Sign Searcher makes to the rendering engine, it is
 incompatible with most optimization mods, but in most cases it can be made
 compatible. Known combinations are:
 
-- **Sodium** - Fully compatible, maintained by me.
+- **Sodium** - Fully compatible.
 
 - **Optifine / Optifabric** - Untested, is likely not compatible, and I'm not
 willing to maintain it myself; however, PRs are welcome!
